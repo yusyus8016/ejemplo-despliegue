@@ -12,8 +12,11 @@
     "sweetalert2": "^11.10.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "http://yusyus8016.githug.io/ejemplo-despliegue",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
