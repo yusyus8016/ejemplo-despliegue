@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .search__box{
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  margin: top;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search__box .search__box--input{
+  width: 80%;
+  padding: 10px;
+  outline: none;
+}
+.search__box .search__box--btn{
+  background-color: rgb(122, 70, 243);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  width: 20%;
+  border: 2px solid darkgoldenrod;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main__content{
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+.main__content .main__content--grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.main__content .main__content--grid img{
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center center;
+} */
+
+
+/* Estilos base */
+.search__box {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.search__box .search__box--input {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+}
+
+.search__box .search__box--btn {
+  background-color: rgb(122, 70, 243);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  width: 20%;
+  border: 2px solid darkgoldenrod;
+}
+
+.main__content {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.main__content .main__content--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cambiado para hacer que las columnas sean flexibles */
+  gap: 1rem;
+}
+
+.main__content .main__content--grid img {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Media query para tamaños de pantalla pequeños */
+@media screen and (max-width: 768px) {
+  .search__box {
+    width: 100%; /* Cambiado para ocupar todo el ancho disponible */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .search__box .search__box--input {
+    width: 70%; /* Cambiado para ocupar un poco menos del ancho total */
+  }
+  
+  .search__box .search__box--btn {
+    width: 30%; /* Cambiado para ocupar un poco más del ancho total */
+  }
+  
+  .main__content {
+    width: 100%; /* Cambiado para ocupar todo el ancho disponible */
   }
 }
